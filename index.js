@@ -9,8 +9,8 @@ app.get('/', function(req, res){
   res.send('<h1>AppCoda - SocketChat Server</h1>');
 });
 
-
-http.listen(3000, function(){
+var port = process.env.PORT || 3000;
+http.listen(port, function(){
   console.log('Listening on *:3000');
 });
 
